@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactes - La Que Se Avecina</title>
+</head>
+<body>
+
+  <header>
+    <h1>La Que Se Avecina</h1>
+    <p>Formulari de contacte</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Inici</a>
+    <a href="contactes.html">Contactes</a>
+    <a href="videos.html">Vídeos</a>
+    <a href="horario.html">Horari</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Contacta amb nosaltres</h2>
+      <form action="#" method="post">
+
+        <label for="nom">Nom complet:</label><br>
+        <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom" required><br><br>
+
+        <label for="email">Correu electrònic:</label><br>
+        <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required><br><br>
+
+        <label for="edat">Edat:</label><br>
+        <input type="number" id="edat" name="edat" min="10" max="99"><br><br>
+
+        <label for="color">Color preferit:</label><br>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label for="data">Data de naixement:</label><br>
+        <input type="date" id="data" name="data"><br><br>
+
+        <input type="hidden" name="tema" value="formulari_lqsa">
+
+        <label>Gènere:</label><br>
+        <input type="radio" name="genere" value="home"> Home
+        <input type="radio" name="genere" value="dona"> Dona
+        <input type="radio" name="genere" value="altres"> Altres<br><br>
+
+        <label for="personatge">Personatge favorit:</label><br>
+        <select id="personatge" name="personatge">
+          <option value="amador">Amador Rivas</option>
+          <option value="recio">Antonio Recio</option>
+          <option value="enrique">Enrique Pastor</option>
+          <option value="judith">Judith</option>
+        </select><br><br>
+
+        <label>Vols rebre novetats?</label>
+        <input type="checkbox" name="novetats" checked><br><br>
+
+        <label for="missatge">Comentaris:</label><br>
+        <textarea id="missatge" name="missatge" rows="4" cols="40" placeholder="Escriu el teu missatge..."></textarea><br><br>
+
+        <input type="submit" value="Enviar">
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Pàgina creada per: Joan Fandos i Javier Valero | Projecte escolar sobre <b>La Que Se Avecina</b> | &copy; 2025</p>
+  </footer>
+
+</body>
+</html>
