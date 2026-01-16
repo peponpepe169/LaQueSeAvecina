@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(25, 25, 112);
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 5px solid rgb(255, 215, 0);
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+nav > a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 15px 25px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav > a:hover {
+    background-color: rgb(255, 215, 0);
+    color: rgb(0, 0, 0);
+}
+
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    min-height: 400px;
+}
+
+#descripcio {
+    padding: 20px;
+    background-color: rgb(240, 248, 255);
+    border-left: 5px solid rgb(25, 25, 112);
+    margin-bottom: 20px;
+}
+
+.destacado {
+    color: rgb(220, 20, 60);
+    text-decoration: underline;
+    font-style: italic;
+}
+
+article p {
+    color: rgb(105, 105, 105);
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+h1, h2, h3 {
+    color: rgb(25, 25, 112);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h2::first-letter {
+    font-size: 150%;
+    color: rgb(220, 20, 60);
+}
+
+ul {
+    list-style-type: square;
+    background-color: rgb(249, 249, 249);
+    padding: 20px 40px;
+    border: 1px solid rgb(221, 221, 221);
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: rgb(0, 0, 139);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid rgb(221, 221, 221);
+    text-align: left;
+}
+
+th {
+    background-color: rgb(25, 25, 112);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(242, 242, 242);
+}
+
+tr:hover {
+    background-color: rgb(255, 255, 224);
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: rgb(34, 139, 34);
+    color: rgb(255, 255, 255);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(0, 100, 0);
+}
+
+video {
+    width: 640px;
+    height: 360px;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid rgb(51, 51, 51);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+    max-width: 100%;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 5px solid rgb(51, 51, 51);
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+}
+
+footer {
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    border-top: 5px solid rgb(255, 215, 0);
+}
