@@ -1,157 +1,179 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: sans-serif;
 }
 
 body {
-    background-color: rgb(245, 245, 245);
-    color: rgb(51, 51, 51);
+    background-color: rgb(236, 240, 241);
+    color: rgb(44, 62, 80);
+    line-height: 1.5;
 }
 
 header {
-    background-color: rgb(25, 25, 112);
+    background-color: rgb(41, 128, 185);
     color: rgb(255, 255, 255);
-    padding: 2rem;
+    padding: 3em 1em;
     text-align: center;
-    border-bottom: 5px solid rgb(255, 215, 0);
+    border-bottom: 6px solid rgb(22, 160, 133);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
 nav {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(52, 73, 94);
     text-align: center;
     width: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 4px solid rgb(44, 62, 80);
 }
 
 nav > a {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    padding: 15px 25px;
+    padding: 15px 30px;
+    display: inline-block;
     font-weight: bold;
 }
 
 nav > a:hover {
-    background-color: rgb(255, 215, 0);
-    color: rgb(0, 0, 0);
+    background-color: rgb(22, 160, 133);
+    color: rgb(255, 255, 255);
 }
 
 main {
-    max-width: 1000px;
-    margin: 30px auto;
-    padding: 0 20px;
+    width: 900px;
+    margin: 40px auto;
+    padding: 40px;
     background-color: rgb(255, 255, 255);
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    min-height: 400px;
+    border: 1px solid rgb(200, 200, 200);
 }
 
-#descripcio {
-    padding: 20px;
-    background-color: rgb(240, 248, 255);
-    border-left: 5px solid rgb(25, 25, 112);
-    margin-bottom: 20px;
-}
-
-.destacado {
-    color: rgb(220, 20, 60);
-    text-decoration: underline;
-    font-style: italic;
-}
-
-article p {
-    color: rgb(105, 105, 105);
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-h1, h2, h3 {
-    color: rgb(25, 25, 112);
-    margin-top: 20px;
-    margin-bottom: 10px;
+h2, h3 {
+    color: rgb(41, 128, 185);
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid rgb(236, 240, 241);
+    padding-bottom: 10px;
 }
 
 h2::first-letter {
     font-size: 150%;
-    color: rgb(220, 20, 60);
+    color: rgb(230, 126, 34);
+    font-weight: bold;
+}
+
+#descripcio {
+    background-color: rgb(240, 255, 255);
+    padding: 25px;
+    border: 1px solid rgb(41, 128, 185);
+    margin-bottom: 30px;
+}
+
+.destacado {
+    color: rgb(192, 57, 43);
+    background-color: rgb(255, 230, 230);
+    border: 1px solid rgb(192, 57, 43);
+    padding: 2px 6px;
+    font-weight: bold;
+}
+
+article p {
+    color: rgb(80, 80, 80);
+    text-align: justify;
+    margin-bottom: 20px;
+    font-size: 1em;
 }
 
 ul {
     list-style-type: square;
-    background-color: rgb(249, 249, 249);
-    padding: 20px 40px;
-    border: 1px solid rgb(221, 221, 221);
-    margin-bottom: 20px;
+    padding: 0;
+    margin-left: 20px;
 }
 
-li {
-    margin-bottom: 8px;
-    color: rgb(0, 0, 139);
+ul li {
+    background-color: rgb(248, 249, 250);
+    border: 1px solid rgb(230, 230, 230);
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(44, 62, 80);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 0.95rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 25px 0;
+    border: 1px solid rgb(200, 200, 200);
 }
 
 th, td {
-    padding: 12px 15px;
-    border: 1px solid rgb(221, 221, 221);
+    padding: 15px;
     text-align: left;
+    border: 1px solid rgb(230, 230, 230);
 }
 
 th {
-    background-color: rgb(25, 25, 112);
+    background-color: rgb(41, 128, 185);
     color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 0.85em;
 }
 
 tr:nth-child(even) {
-    background-color: rgb(242, 242, 242);
+    background-color: rgb(242, 248, 255);
 }
 
 tr:hover {
-    background-color: rgb(255, 255, 224);
+    background-color: rgb(255, 248, 225);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: rgb(52, 73, 94);
 }
 
 input[type="text"], 
 input[type="email"], 
 input[type="number"], 
+input[type="date"],
+input[type="color"],
 select, 
 textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
-    margin: 8px 0;
-    border: 2px solid rgb(204, 204, 204);
-    border-radius: 4px;
+    margin-top: 5px;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: rgb(250, 250, 250);
+    font-size: 1em;
 }
 
 input[type="submit"] {
-    background-color: rgb(34, 139, 34);
+    background-color: rgb(39, 174, 96);
     color: rgb(255, 255, 255);
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
+    padding: 15px;
+    border: 2px solid rgb(30, 132, 73);
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
     width: 100%;
 }
 
 input[type="submit"]:hover {
-    background-color: rgb(0, 100, 0);
+    background-color: rgb(30, 132, 73);
 }
 
 video {
     width: 640px;
     height: 360px;
     display: block;
-    margin: 20px auto;
-    border: 5px solid rgb(51, 51, 51);
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
-    max-width: 100%;
+    margin: 30px auto;
+    border: 10px solid rgb(52, 73, 94);
+    background-color: rgb(0, 0, 0);
 }
 
 img {
@@ -159,17 +181,15 @@ img {
     max-width: 100%;
     height: auto;
     margin: 20px auto;
-    border: 5px solid rgb(51, 51, 51);
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+    border: 5px solid rgb(52, 73, 94);
 }
 
 footer {
-    background-color: rgb(34, 34, 34);
-    color: rgb(255, 255, 255);
+    background-color: rgb(44, 62, 80);
+    color: rgb(189, 195, 199);
     text-align: center;
-    padding: 20px;
-    margin-top: 30px;
-    font-size: 0.8rem;
-    border-top: 5px solid rgb(255, 215, 0);
+    padding: 40px 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+    border-top: 6px solid rgb(230, 126, 34);
 }
